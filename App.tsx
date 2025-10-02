@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { TrackingMap } from './components/TrackingMap';
 import { VehicleDataPanel } from './components/VehicleDataPanel';
 import { VehicleTypeSelector } from './components/VehicleTypeSelector';
 import { LoginDialog } from './components/LoginDialog';
 import { Button } from './components/ui/button';
 import { LogIn } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface VehicleData {
   origin: string;

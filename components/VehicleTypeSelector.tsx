@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Tabs, TabsList, TabsTrigger } from './ui/tabs';
 import { Ship } from 'lucide-react';
 
@@ -9,7 +9,7 @@ interface VehicleTypeSelectorProps {
 
 export function VehicleTypeSelector({ vehicleType, onVehicleTypeChange }: VehicleTypeSelectorProps) {
   return (
-    <Tabs value={vehicleType} onValueChange={(value) => onVehicleTypeChange(value as 'aircraft' | 'ship')}>
+  <Tabs value={vehicleType} onValueChange={(value: string) => onVehicleTypeChange(value as 'aircraft' | 'ship')}>
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="aircraft" className="flex items-center gap-2">
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

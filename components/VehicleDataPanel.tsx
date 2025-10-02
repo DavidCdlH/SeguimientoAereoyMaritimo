@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
@@ -59,7 +59,7 @@ export function VehicleDataPanel({
           
           <div>
             <Label htmlFor="status">Estado</Label>
-            <Select value={data.status} onValueChange={(value) => onDataChange('status', value)}>
+            <Select value={data.status} onValueChange={(value: string) => onDataChange('status', value)}>
               <SelectTrigger>
                 <SelectValue placeholder="Seleccionar estado" />
               </SelectTrigger>
